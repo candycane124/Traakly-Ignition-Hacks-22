@@ -1,40 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>To-do List</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <script type="text/javascript" src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Traakly</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <h1>To-Do List:</h1>
+  <div class="header">
+    <div class="pages">
+      <a href="./index.html"><img class="logoPos" src="./to-do list/images/Group 2.png"></a>
+    </div>
+    <div class="pages">
+      <div class="page"><h4><a href="./index.html" class="active">Home</a></h4></div>
+      <div class="page"><h4><a href="./overview.html">Overview</a></h4></div>
+      <div class="page"><h4><a href="./overview.html#t1">Completed</a></h4></div>
+      <div class="page"><h4><a href="./contact.html" class="mr-15">Contact</a></h4></div>
+    </div>
+  </div>
 
-  <table id="t1">
-    <tr>
-      <th width="20%">Complete?</th>
-      <th width="50%">Task</th>
-      <th>Deadline</th>
-      <th><input type="button" value="Add Task" onclick="add()" /></th>
-    </tr>
+  <div class="row">
+    <img class="backgroundImg" src="./to-do list/images/Group 1.png">
+    <div class="col-6 mainMessage">
+      <h2 class="negativeSpaceH2 biggerFont">Welcome to</h2>
+      <h2 class="co-yellow biggerFont">Traakly.</h2>
+      <h2 class="mediumFont">Simple. Easy. Convenient.</h2>
+      <p class="mediumSmallFont negativeSpaceP2">The simple task tracker - so you can</p>
+      <p class="mediumSmallFont addSpace">focus most on getting things done!</p>
+      <a class="startTraakly" href="./overview.html"><span>Start using Traakly</span></a>
+    </div>
+    <div class="col-6">
+      <img class="homeImg" src="./to-do list/images/Graphic.png">
+    </div>
+  </div>
 
-    <tr>
-      <td width="20%">
-        <input type="checkbox" />
-      </td>
-      <td width="50%">
-        <input type="text" />
-      </td>
-      <td>
-        
-      </td>
-      <td> <input type="button" value="Delete" onclick="deleteRow(this)" /></td>
-
-    </tr>
-  </table>
-
+  <script src="script.js"></script>
 </body>
 
 </html>

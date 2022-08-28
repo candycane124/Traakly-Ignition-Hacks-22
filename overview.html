@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="script.js"></script>
+  <script src="https://kit.fontawesome.com/1b9781e78a.js" crossorigin="anonymous"></script>
+  <title>Traakly - Overview</title>
+</head>
+
+<body>
+  <div class="main-page">
+    <!-- HEADER -->
+    <div class="header">
+      <div>
+        <div>
+          <a href="./index.html"><img class="logoPos" src="./to-do list/images/Group 2.png"></a>
+        </div>
+      </div>
+
+      <div class="pages">
+        <div class="page"><a href="./index.html">Home</a></div>
+        <div class="page"><a href="./overview.html" id="current-page">Overview</a></div>
+        <div class="page"><a href="#t2">Completed</a></div>
+        <div class="page"><a href="./contact.html">Contact</a></div>
+      </div>
+    </div>
+
+    <!-- TO-DO SECTION -->
+    <div class="main">
+      <div class="to-do-main">
+        <div class="inline">
+          <div class="table-title">To-Do List:</div>
+          <div class="add-task-btn">
+            <button id="addBtn" class="activated" onclick="openForm()">Add Task</button>
+          </div>
+        </div>
+
+        <div class="taskForm">
+          <form id="taskForm">
+            <div class="formTitle">New Task</div>
+            <div class="taskNameInput">
+              <label for="taskName">Name:</label><br>
+              <input type="text" id="taskName" name="taskName">
+            </div>
+            <div class="taskDeadlineInput">
+              <label for="deadline">Deadline:</label><br>
+              <input type="date" id="deadline" name="deadline">
+            </div>
+            <div class="optionBtns">
+              <input type="button" value="Confirm" onclick="add()" class="confirmBtn">
+              <input type="button" value="Cancel" onclick="closeForm()" class="cancelBtn">
+            </div>
+          </form>
+        </div>
+        <div class="table">
+          <table id="t1">
+            <tr class="tableHeader">
+              <th class="tableHeadItem">Complete?</th>
+              <th class="tableHeadItem">Task</th>
+              <th class="tableHeadItem">Deadline</th>
+              <th class="tableHeadItem">Modify</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- COMPLETED SECTION -->
+    <div class="completed-main" id="completed">
+      <div class="table-title">Completed:</div>
+      <div class="table">
+        <table id="t2">
+          <tr class="tableHeader">
+            <th class="tableHeadItem">Complete?</th>
+            <th class="tableHeadItem">Task</th>
+            <th class="tableHeadItem">Deadline</th>
+            <th class="tableHeadItem">Modify</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>
