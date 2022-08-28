@@ -1,3 +1,5 @@
 ## ignition-hacks-22
 
-*Traakly*
+**Traakly**
+
+Simple to-do list website.
